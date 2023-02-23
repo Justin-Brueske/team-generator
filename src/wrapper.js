@@ -6,15 +6,14 @@ const wrapper = (cards) => `
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Team Profile</title>
 
 </head>
 
 <body>
-    <header>Team Profile</header>
+    <header class="text-4xl text-center pb-2.5">Team Profile</header>
 
-    <div class="flex justify-evenly">
+    <div class="flex justify-evenly grid-cols-4">
         ${cards}
     </div>
 </body>
