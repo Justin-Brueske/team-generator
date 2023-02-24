@@ -7,15 +7,9 @@ const managerCard = require("./src/manager");
 const engineerCard = require("./src/engineer");
 const internCard = require("./src/intern");
 const wrap = require("./src/wrapper");
-const { log } = require("console");
 const team = [];
 
 const addManager = [
-    // {
-    //     name: "role",
-    //     type: "confirm",
-    //     message: "Would you like to start building you team",
-    // },
     {
         type: "input",
         message: "Enter the manager's name",
@@ -108,7 +102,6 @@ function question(answers) {
     inquirer
         .prompt(answers)
         .then((member) => {
-            console.log(member);
             team.push(member);
 
             if (member.upNext === "Add an Engineer") {
